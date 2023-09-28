@@ -49,7 +49,84 @@ html{
     width: 100%;
     background-color: cyan;
     margin: 0;
+    display: flex;
+    background-image: linear-gradient(150deg,rgb(242,71,71), rgb(80,92,238));
 }
+
+.content__main{
+    display: inherit;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 70px;
+    gap: 20px;
+    color: #fff;
+}
+
+.content__main--title{
+    font-size: 20px;
+}
+
+.content__main--title1{
+    color: #000;
+}
+
+.content__main--title2{
+    margin-top: 20px;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+.content__main--description{
+    font-size: 80%;
+    margin: 10px 0px 15px 0px;
+}
+
+.content__main--input .email{
+    height: 35px;
+    width: 48%;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    transition-property: width, box-shadow;
+    transition-duration: 0.5s;
+}
+
+.email:hover{
+    box-shadow: 0 0 10px rgb(60, 75, 162);
+    width: 50%;
+}
+
+::placeholder{
+    color: #000;
+    padding-left: 20px;
+}
+
+.content__main--input .button{
+    color: #fff;
+    height: 40px;
+    width: 40%;
+    border-radius: 10px;
+    background-color: rgb(243,71,115);
+    border: none;
+    cursor: pointer;
+
+    transition-property: width, box-shadow;
+    transition-duration: 0.5s;
+}
+.button:active{
+    transform: scale(0.96);
+}
+.button:hover{
+    box-shadow: 0 0 5px cyan;
+    width: 43%;
+}
+
+.content__img{
+    height: 580px;
+    padding: 50px 0 0 50px;
+}
+
 
 .footer{
     width: 100%;
