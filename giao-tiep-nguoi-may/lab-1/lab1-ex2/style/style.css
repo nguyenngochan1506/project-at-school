@@ -13,6 +13,7 @@ li, ul {
   display: inline-block;
 }
 
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -31,6 +32,10 @@ li, ul {
   align-items: center;
   justify-content: center;
 }
+.left__header a{
+  text-decoration-line: none;
+  color: #000;
+}
 .header .left__header .left__header--title {
   text-transform: uppercase;
   margin-left: 1rem;
@@ -44,9 +49,23 @@ li, ul {
 .header .right__header .list {
   padding-left: 1rem;
   width: 70%;
+  height: 100%;
   display: inherit;
   justify-content: space-around;
 }
+.header .right__header .list .list--items{
+  display: inherit;
+  height: 100%;
+  align-items: center;
+}
+.header .right__header .list .list--items:hover{
+  background-color: #044b551a;
+}
+ .list a{
+  color: #000;
+  text-decoration-line: none;
+ }
+
 .header .right__header .button {
   font-size: 1rem;
   height: 1.8rem;
@@ -54,8 +73,14 @@ li, ul {
   border-radius: 0.4rem;
   border: none;
   margin-left: 0.5rem;
+  transition-property: transform;
+  transition-duration: 0.3s;
 }
 .header .right__header .button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.header .right__header .button:active {
   transform: scale(0.95);
 }
 
@@ -99,6 +124,12 @@ li, ul {
   padding-right: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+.content .left__content .button-group .butoon--download:hover{
+  transform: scale(1.05);
+  cursor: pointer;
 }
 .content .left__content .button-group .rating {
   font-weight: bold;
@@ -113,4 +144,8 @@ li, ul {
   height: 80%;
 }
 
-/*# sourceMappingURL=style.css.map */
+
+.rate--point{
+  margin-right: 0.3rem;
+}
+
