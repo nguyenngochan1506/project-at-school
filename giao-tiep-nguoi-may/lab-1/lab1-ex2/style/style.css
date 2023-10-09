@@ -17,7 +17,7 @@ li, ul {
 .container {
   height: 100vh;
   width: 100vw;
-  background-color: #00bdda;
+  background-image: linear-gradient(140deg,rgb(0,189,218) 75%,rgb(0,142,164) 75%);
 }
 
 .header {
