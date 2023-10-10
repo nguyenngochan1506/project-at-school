@@ -105,10 +105,23 @@ body{
             margin: 2rem 0;
 
             .title {
+                display: flex;
+                text-wrap: nowrap;
                 margin-bottom: 2rem;
-                @include sideTitle()
+                @include sideTitle();
+                div{
+                    width: max-content;
+                    margin: 0 1rem;
+                }
             }
+            .title::before,
+            .title::after {
+                border-top: 0.4rem dotted #fff; // Đổi vị trí giá trị border-top
+                content: "";
+                width: 100%;
 
+                transform: translateY(0.8rem);
+            }
             .group-items {
                 width: 100%;
                 display: flex;

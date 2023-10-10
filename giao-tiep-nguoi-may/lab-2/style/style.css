@@ -91,12 +91,25 @@ body {
   margin: 2rem 0;
 }
 .side .side__content .contact .title {
+  display: flex;
+  text-wrap: nowrap;
   margin-bottom: 2rem;
   color: #fff;
   font-size: large;
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
+}
+.side .side__content .contact .title div {
+  width: max-content;
+  margin: 0 1rem;
+}
+.side .side__content .contact .title::before,
+.side .side__content .contact .title::after {
+  border-top: 0.4rem dotted #fff;
+  content: "";
+  width: 100%;
+  transform: translateY(0.8rem);
 }
 .side .side__content .contact .group-items {
   width: 100%;
