@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./custom-style.css">
+    <title>About</title>
+</head>
+<body>
+    <nav class="navbar"></nav>
+    
+    <header class="container">
+        <div class="image">
+            <img src="images/header.png">
+        </div>
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <H1>About me</H1>
+            <h4>Họ Tên: Nguyễn Ngọc Hân</h4>
+            <h4>Mssv: 22130071</h4>
+            <p>
+                Hi vọng trong tương lai sẽ trở thành một kỹ sư phần mềm!
+            </p>
+            <button class="btn">Get Started</button>
+        </div>
+       
+    </header>
+     <section class="container">
+        <h2 class="header">My Skills</h2>
+        <div class="features">
+            <div class="card">
+                <span><img src="./images/html-css.png" alt="icon" height="150px"></span>
+                <h4>HTML/CSS</h4>
+                <p>
+                    Có kiến thức cơ bản về HTML và CSS
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><img src="./images/java.jpg" alt="icon" height="150px" style="width: 220px;"></i></span>
+                <h4>Java</h4>
+                <p>
+                   Đây là ngôn ngữ đầu tiên mà tôi học, và tôi cũng chọn ngôn này làm ngôn ngữ chính cho phần back-end cho các ứng dụng của tôi!
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><img src="./images/spring.jpg" alt="icon" height="150px">></i></span>
+                <h4>SpringBoot</h4>
+                <p>
+                   Vì việc code thuần rất vất vả, nên tôi chọn một framework để làm việc, SpringBoot là framework mà tôi đã chọn!
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><img src="./images/react.jpg" alt="icon"></i></span>
+                <h4>ReactJS</h4>
+                <p>
+                   Không chỉ có back-end, tôi cũng cần kiến thức về front-end để làm việc hiệu quả với những người làm về mảng này
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer class="container"></footer>
+ 
+    <script src="script.js"></script>
+    <script>
+        fetch('./navbar.html').then(
+            response => response.text()
+        ).then(
+            data => {
+                document.querySelector(".navbar").innerHTML = data;
+            }
+        )
+        fetch('./footer.html').then(
+            response => response.text()
+        ).then(
+            data => {
+                document.querySelector("footer").innerHTML = data;
+            }
+        )
+    </script>
+</body>
+</html>

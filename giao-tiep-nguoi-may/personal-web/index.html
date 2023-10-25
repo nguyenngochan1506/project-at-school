@@ -6,35 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Personal Portfolio #1 | AsmrProg</title>
+    <title>Home Page</title>
 </head>
 
 <body>
+    <nav class="navbar">
 
-    <nav>
-        <div class="nav-logo">
-            <a href="#">
-                <img src="images/logo.png">
-            </a>
-        </div>
-
-        <ul class="nav-links">
-            <li class="link"><a href="#">Home</a></li>
-            <li id="link1" class="link"><a href="#">Features</a></li>
-            <li id="link2" class="link"><a href="#">Pricing</a></li>
-            <li id="link3" class="link"><a href="#">About</a></li>
-        </ul>
-        <button class="btn">Hire Me</button>
     </nav>
-
     <header class="container">
         <div class="content">
             <span class="blur"></span>
             <span class="blur"></span>
-            <h4>My profile</h4>
             <H1>Hi, I'm <span>Han</span>, Web Developer</H1>
             <p>
-                I'm a back-end developer
+               Tôi là một lập trình viên thiên về Back-end
             </p>
             <button class="btn">Get Started</button>
         </div>
@@ -43,46 +28,10 @@
         </div>
     </header>
 
-    <section class="container">
-        <h2 class="header">My Skills</h2>
-        <div class="features">
-            <div class="card">
-                <span><img src="./images/html-css.png" alt="icon" height="150px"></span>
-                <h4>HTML/CSS</h4>
-                <p>
-                    Although I am a back-end developer, I still learn a bit about web interface design with HTML and CSS
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><img src="./images/java.jpg" alt="icon" height="150px" style="width: 220px;"></i></span>
-                <h4>Java</h4>
-                <p>
-                    The main programming language I often use is Java.
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><img src="./images/spring.jpg" alt="icon" height="150px">></i></span>
-                <h4>SpringBoot</h4>
-                <p>
-                    I choose Spring Boot as my framework because my primary programming language is Java.
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><img src="./images/react.jpg" alt="icon"></i></span>
-                <h4>ReactJS</h4>
-                <p>
-                    I have also learned a bit about React.js to gain a better understanding of front-end development.
-                </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-        </div>
-    </section>
+   
 
     <section class="container">
-        <h2 class="header">An exciting and joyful life of a young developer</h2>
+        <h2 class="header">Cuộc sống thú vị của một lập trình viên!</h2>
         <p class="sub-header">
             while(alive){
               <br>  study();
@@ -95,39 +44,7 @@
     </section>
 
     <footer class="container">
-        <span class="blur"></span>
-        <span class="blur"></span>
-        <div class="column">
-            <div class="logo">
-                <img src="images/logo.png">
-            </div>
-            <p>
-                
-            </p>
-            <div class="socials">
-                <a href="#"><i class="ri-youtube-line"></i></a>
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-twitter-line"></i></a>
-            </div>
-        </div>
-        <div class="column">
-            <h4>Company</h4>
-            <a href="#">Business</a>
-            <a href="#">Partnership</a>
-            <a href="#">Network</a>
-        </div>
-        <div class="column">
-            <h4>About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Channels</a>
-            <a href="#">Sponsors</a>
-        </div>
-        <div class="column">
-            <h4>Contact</h4>
-            <a href="#">Contact Us</a>
-            <a href="#">Privicy Policy</a>
-            <a href="#">Terms & Conditions</a>
-        </div>
+        
     </footer>
 
     <div class="copyright">
@@ -136,6 +53,22 @@
 
 
     <script src="script.js"></script>
+    <script>
+        fetch('./navbar.html').then(
+            response => response.text()
+        ).then(
+            data => {
+                document.querySelector(".navbar").innerHTML = data;
+            }
+        )
+        fetch('./footer.html').then(
+            response => response.text()
+        ).then(
+            data => {
+                document.querySelector("footer").innerHTML = data;
+            }
+        )
+    </script>
 </body>
 
 </html>
