@@ -46,7 +46,7 @@ nav{
 .link a{
     position: relative;
     padding-bottom: 0.75rem;
-    color: #fff;
+    color: #000;
 }
 
 .link a::after{
@@ -67,7 +67,7 @@ nav{
 .btn{
     padding: 1rem 2rem;
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     background-color: #1d4ed8;
     border-radius: 5px;
     cursor: pointer;
@@ -101,13 +101,13 @@ header{
 
 header .content h4{
     margin-bottom: 1rem;
-    color: #ccc;
+    color: #000;
     font-size: 1rem;
     font-weight: 600;
 }
 
 header .content h1{
-    color: #fff;
+    color: #000;
     margin-bottom: 1rem;
     font-size: 3rem;
     font-weight: 700;
@@ -116,12 +116,12 @@ header .content h1{
 
 header .content h1 span{
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #000;
 }
 
 header .content p{
     margin-bottom: 2rem;
-    color: #ccc;
+    color: #000;
 }
 
 header .image{
@@ -149,7 +149,7 @@ header .image img{
 
 section .header{
     margin-bottom: 1rem;
-    color: #fff;
+    color: #000;
     text-align: center;
     font-size: 2.25rem;
     font-weight: 600;
@@ -172,7 +172,7 @@ section .header{
 
 .features .card:hover{
     background-color: #323232;
-    border-color: #fff;
+    border-color: #000;
 }
 
 .features .card span{
@@ -181,24 +181,24 @@ section .header{
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
-    color: #fff;
+    color: #000;
     border-radius: 5px;
 }
 
 .features .card h4{
     margin-bottom: 0.5rem;
-    color: #fff;
+    color: #000;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
 .features .card p{
-    color: #ccc;
+    color: #000;
     margin-bottom: 1rem;
 }
 
 .features .card a{
-    color: #fff;
+    color: #000;
     transition: all 0.3s ease;
 }
 
@@ -210,7 +210,7 @@ section .header{
     max-width: 600px;
     margin: auto;
     text-align: center;
-    color: #ccc;
+    color: #000;
 }
 
 .pricing{
@@ -232,7 +232,7 @@ section .header{
 
 .pricing .card:hover{
     background-color: #323232;
-    border-color: #fff;
+    border-color: #000;
 }
 
 .pricing .card .content{
@@ -242,35 +242,35 @@ section .header{
 
 .pricing .card h4{
     margin-bottom: 1rem;
-    color: #fff;
+    color: #000;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 .pricing .card h3{
-    color: #fff;
+    color: #000;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: 600;
-    border-bottom: 2px dashed #fff;
+    border-bottom: 2px dashed #000;
 }
 
 .pricing .card p{
-    color: #fff;
+    color: #000;
     margin-bottom: 0.75rem;
 }
 
 .pricing .card p i{
-    color: #ccc;
+    color: #000;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
 .pricing .card button{
-    color: #fff;
+    color: #000;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #000;
 }
 
 .pricing .card button:hover{
@@ -291,7 +291,7 @@ footer .column .logo{
 }
 
 footer .column p{
-    color: #ccc;
+    color: #000;
     margin-bottom: 2rem;
 }
 
@@ -302,8 +302,8 @@ footer .column .socials{
 }
 
 footer .column .socials a{
-    color: #ccc;
-    border: 1px solid #ccc;
+    color: #000;
+    border: 1px solid #000;
     padding: 5px 10px;
     font-size: 1.25rem;
     border-radius: 100%;
@@ -311,13 +311,13 @@ footer .column .socials a{
 }
 
 footer .column .socials a:hover{
-    color: #fff;
+    color: #000;
     background-color: #1d4ed8;
     border-color: #1d4ed8;
 }
 
 footer .column h4{
-    color: #fff;
+    color: #000;
     margin-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -325,7 +325,7 @@ footer .column h4{
 
 footer .column > a{
     display: block;
-    color: #ccc;
+    color: #000;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
 }
@@ -338,7 +338,7 @@ footer .column > a:hover{
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
-    color: #fff;
+    color: #000;
     font-size: 0.8rem;
     text-align: center;
 }
