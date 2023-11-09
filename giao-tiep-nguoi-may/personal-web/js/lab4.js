@@ -50,13 +50,13 @@ const design = () => {
                    <div class="row justify-content-center mt-4">
                      <div class="col-5 ">
                         <h3 class="text-center">Thiết kế trên giấy</h3>
-                        <div class="text-center"><a class="btn btn-success" href="images/header.png" download>Tải ảnh</a></div>
+                        <div class="text-center"><a class="btn btn-success" href="images/design2.png" download>Tải ảnh</a></div>
                         <img id="thietKeTrenGiay" src="./images/design2.png" class="img-fluid mt-2" alt="img"> 
                      </div>
                      <div class="col-5">
                          <h3 class="text-center">Thiết kế trên HTML</h3>
                         <div class='d-flex justify-content-center gap-2'>
-                            <div class="text-center"><a class="btn btn-success" href="images/header.png" download>Tải ảnh</a></div>
+                            <div class="text-center"><a class="btn btn-success" href="images/design.png" download>Tải ảnh</a></div>
                             <div class="text-center"><a class="btn btn-danger" href="https://www.figma.com/community/file/1304430921598702799" target='_blank' download>Go to figma</a></div>
                         </div>
                         <img id="thietKeTrenHtml" src="./images/design.png" class="img-fluid mt-2" alt="img"> 
@@ -81,6 +81,7 @@ const implement = () => {
                 style="border-radius: 10px;" />
             </div>
             <button class="btn btn-success mt-1" id="btn-them-sach">Thêm sách mới</button>
+            <button class="btn btn-success mt-1" id="btn-sua-sach" onclick=suaSach2() hidden >Sửa sách</button>
             <div class="row mt-3">
             <input class="col-5 border-1" type="text" id="timSach" data-search placeholder="Tìm sách"
                 style="border-radius: 10px;" />
@@ -154,13 +155,12 @@ const themSach = () => {
 }
 //hàm xoá sách
 const xoaSach = (tenSach) => {
-
     arrSach = arrSach.filter((sach) => sach.tenSach !== tenSach);
     loadUpdateWithArr(arrSach, document.querySelector('tbody'));
 }
 
 //hàm sửa sách
-const suaSach = (tenSach, tacGia, quocGia, namXuatBan) => {
+const suaSach = (index, tenSach, tacGia, quocGia, namXuatBan) => {
     //ý tưởng là ta sẽ xoá nó rồi đem tất cả thông tin vào ô thêm sách
     // xem ta xem như thêm nó lại từ đầu
     //b1: thêm các thông tin vào ô input
@@ -168,10 +168,34 @@ const suaSach = (tenSach, tacGia, quocGia, namXuatBan) => {
     document.querySelector('#tacGia').value = tacGia;
     document.querySelector('#quocGia').value = quocGia;
     document.querySelector('#namXuatBan').value = namXuatBan;
-    //b2: xoá nó khỏi arr
-    xoaSach(tenSach)
 
+    //hiện btn sửa
+    const btnSuaSach = document.querySelector("#btn-sua-sach");
+    btnSuaSach.removeAttribute('hidden')
+    btnSuaSach.setAttribute('index-in-arr', index)
 }
+
+const suaSach2 = () => {
+    const btnSuaSach = document.querySelector("#btn-sua-sach");
+    const viTri = btnSuaSach.getAttribute('index-in-arr');
+    // add thông tin mới
+    const newSach = {
+        tenSach: document.querySelector('#tenSach').value.trim(),
+        tacGia: document.querySelector('#tacGia').value.trim(),
+        quocGia: document.querySelector('#quocGia').value.trim(),
+        namXuatBan: document.querySelector('#namXuatBan').value.trim()
+    };
+    arrSach[viTri] = newSach;
+     //trả về rỗng cho các input
+     document.querySelector('#tenSach').value = ``;
+     document.querySelector('#tacGia').value = ``;
+     document.querySelector('#quocGia').value = ``;
+     document.querySelector('#namXuatBan').value = ``;
+     //ẩn đi nút btn
+     btnSuaSach.toggleAttribute("hidden");
+    loadUpdateWithArr(arrSach, document.querySelector('tbody'));
+}
+
 const loadUpdateWithArr = (arr, tbody) => {
     let main = arr.map((data, index) => {
         return `<tr>
@@ -182,7 +206,7 @@ const loadUpdateWithArr = (arr, tbody) => {
                 <td>${data.namXuatBan}</td>
                 <td>
                     <button class="btn btn-danger" onclick="xoaSach('${data.tenSach}')">Xoá</button>
-                    <button class="btn btn-primary" onclick="suaSach('${data.tenSach}', '${data.tacGia}', '${data.quocGia}', '${data.namXuatBan}')">Sửa</button>
+                    <button class="btn btn-primary" onclick="suaSach('${index}','${data.tenSach}', '${data.tacGia}', '${data.quocGia}', '${data.namXuatBan}')">Sửa</button>
                 </td>
             </tr>`
     });
