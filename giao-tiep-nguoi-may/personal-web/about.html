@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./custom-style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>About</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info-subtle">
-    </nav>
-    <section class="h-100 gradient-custom-2">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info-subtle" style="max-width: 100%;">
+  </nav>
+    <section class="h-100 gradient-custom-2 ">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col col-lg-9 col-xl-7">
@@ -46,33 +44,34 @@
                 </div>
                 <div class="card-body p-4 text-black mt-3">
                   <div class="mb-5">
-                    <p class="lead fw-normal mb-1">About</p>
+                    <p class="lead fw-normal mb-1 ">About</p>
                     <div class="p-4" style="background-color: #f8f9fa;">
                       <p class="font-italic mb-1">Lập trình viên web</p>
                       <p class="font-italic mb-1">học tập tại trường đại học Nông Lâm</p>
                     </div>
                   </div>
                   <div class="d-flex justify-content-between align-items-center mb-4">
-                    <p class="lead fw-normal mb-0">Recent photos</p>
+                    <p class="lead fw-normal mb-0">Skills</p>
                     <p class="mb-0"><a href="#!" class="text-muted">Show all</a></p>
                   </div>
                   <div class="row g-2">
                     <div class="col mb-2">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(112).webp"
-                        alt="image 1" class="w-100 rounded-3">
+                      <img src="./images/html-css.png"
+                        alt="image 1" class="w-100 rounded-3" width="320px" height="220px" >
                     </div>
                     <div class="col mb-2">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(107).webp"
-                        alt="image 1" class="w-100 rounded-3">
+                      <img src="./images/react.jpg"
+                        alt="image 1" class="w-100 rounded-3"  width="320px" height="220px" >
+                       
                     </div>
                   </div>
                   <div class="row g-2">
                     <div class="col">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(108).webp"
-                        alt="image 1" class="w-100 rounded-3">
+                      <img src="./images/java.jpg"
+                        alt="image 1" class="w-100 rounded-3" width="320px" height="220px" >
                     </div>
                     <div class="col">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(114).webp"
+                      <img src="./images/spring.jpg" width="320px" height="220px" 
                         alt="image 1" class="w-100 rounded-3">
                     </div>
                   </div>
@@ -84,8 +83,6 @@
       </section>
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"></footer>
- 
-    <!-- <script src="script.js"></script> -->
     <script>
         fetch('./navbar.html').then(
             response => response.text()
