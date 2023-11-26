@@ -12,3 +12,22 @@
 #thietKeTrenGiay, #thietKeTrenHtml{
     border: 3px black solid;
 }
+.custom-fitness{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.fit-title{
+    background-color: #00C0FF;
+    color: #fff;
+    padding: 10px 0px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.custome-input-fitness{
+    border: 1px solid #00C0FF;
+    border-radius: 5px;
+}
+.ket-qua{
+    border: 5px solid black;
+    padding: 5px;
+}
