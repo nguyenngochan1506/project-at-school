@@ -1,26 +1,21 @@
-function scrollToElement(elementSelector, instance = 0) {
-    // Select all elements that match the given selector
-    const elements = document.querySelectorAll(elementSelector);
-    // Check if there are elements matching the selector and if the requested instance exists
-    if (elements.length > instance) {
-        // Scroll to the specified instance of the element
-        elements[instance].scrollIntoView({ behavior: 'smooth' });
+window.addEventListener('load', () => {
+    let url = window.location.pathname;
+    switch (url) {
+        case '/index.html':
+            document.querySelectorAll('[href="./index.html"]')[1].classList.add('active')
+            break;
+        case '/about.html':
+            document.querySelector('[href="./about.html"]').classList.add('active')
+            break;
+        case '/lab4.html':
+            document.querySelector('[href="./lab4.html"]').classList.add('active')
+            break;
+        case '/lab5.html':
+            document.querySelector('[href="./lab5.html"]').classList.add('active')
+            break;
+        case '/lab6.html':
+            document.querySelector('[href="./lab6.html"]').classList.add('active')
+            break;
+
     }
-}
-
-const link1 = document.getElementById("link1");
-const link2 = document.getElementById("link2");
-const link3 = document.getElementById("link3");
-
-link1.addEventListener('click', () => {
-    scrollToElement('.header');
-});
-
-link2.addEventListener('click', () => {
-    // Scroll to the second element with "header" class
-    scrollToElement('.header', 1);
-});
-
-link3.addEventListener('click', () => {
-    scrollToElement('.column');
-});
+})

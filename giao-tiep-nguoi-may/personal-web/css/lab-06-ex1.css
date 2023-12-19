@@ -1,0 +1,55 @@
+
+.my-header{
+    height: 60px ;
+}
+.header-left{
+    width: max-content;
+}
+.header-left-logo{
+    height: max-content;
+}
+.header-right-author{
+    height: max-content;
+    width: max-content;
+    border-left: 5px solid #fff;
+
+}
+.header-right-user{
+    right: 21px;
+}
+.my-content{
+    background-image: url('./../images/lab-06-ex1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    height: 75dvh;
+}
+.btn-xem-ngay{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    width: max-content;
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+}
+.btn-xem-ngay:hover{
+    transform: scale(1.2) translateX(20px);
+    transition-property: transform;
+    transition-duration: 500ms;
+}
+.my-search{
+    background: #0A0A17;
+    height: 20dvh;
+}
+.my-search button{
+    height: 35%;
+    background-color: #E83531;
+    width: 10%;
+    border-radius: 1px 15px 15px 1px;
+    font-size: large;
+}
+.input-search{
+    border-radius: 15px 1px 1px 15px;
+    width: 50%;
+    height: 35%;
+}
