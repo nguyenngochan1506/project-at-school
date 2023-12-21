@@ -1,0 +1,169 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #F6F6F6 !important;
+}
+
+.my-header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: 7.2rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.information-link-items {
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.logo {
+    color: #000;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.btn-login a {
+    background-color: #166AEA;
+    width: 15.4rem;
+    height: 4.8rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.my-content {
+    margin-top: 7.2rem !important;
+}
+
+.my-content-left {
+    height: 56.1rem;
+    background-image: url('./../images/lab-06-ex2.png');
+    background-repeat: no-repeat;
+}
+
+.small-title {
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.big-title {
+    color: #000;
+    text-align: center;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content-information {
+    color: #000;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.3rem;
+    /* 143.75% */
+}
+
+.btn-submit {
+    position: absolute;
+    color: #FFF;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.3rem;
+    background-color: #000;
+    border-radius: 3rem;
+    background: #000;
+    width: 23.3rem;
+    height: 4.7rem;
+    right: 2.9rem;
+    bottom: 8.7rem;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    transform: scale(1.2);
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.btn-submit:active {
+    transform: scale(1);
+    transition-property: all;
+    transition-duration: 100ms;
+
+}
+
+.infor-calis-title,
+.why-calis {
+    color: #000;
+    text-align: center;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.3rem;
+    /* 82.143% */
+}
+
+.infor-calis-infor {
+    color: #000;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.3rem;
+    /* 143.75% */
+}
+
+.btn-dang-ky-tap-luyen {
+    position: absolute;
+    right: 12.2rem;
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.3rem;
+    border-bottom: 0.3rem #000 solid;
+    cursor: pointer;
+}
+.btn-dang-ky-tap-luyen:hover{
+    transition: all 500ms;
+    color: #FFF;
+    width: 23.3rem;
+    height: 4.7rem;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #000;
+    border-radius: 3rem;
+    background: #000;
+}
+.btn-dang-ky-tap-luyen:active{
+    transition: 100ms;
+    transform: scale(0.9);
+}
+.btn-login:hover{
+    transition: all 300ms;
+    transform: scale(1.1);
+}
+.btn-login:active{
+    transform: scale(0.9);
+}

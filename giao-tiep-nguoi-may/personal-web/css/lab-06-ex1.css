@@ -42,9 +42,10 @@
     height: 20dvh;
 }
 .my-search button{
+    text-wrap: nowrap;
+    box-sizing: border-box;
     height: 35%;
     background-color: #E83531;
-    width: 10%;
     border-radius: 1px 15px 15px 1px;
     font-size: large;
 }
@@ -52,4 +53,7 @@
     border-radius: 15px 1px 1px 15px;
     width: 50%;
     height: 35%;
+}
+.small-title{
+    max-height: 6em;
 }

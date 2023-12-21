@@ -7,7 +7,8 @@ window.addEventListener('load', () => {
     document.querySelector('#lab-6-debai').addEventListener('click', ()=>renderDeBai(content))
     // xử lý sự kiện cho ex1
     document.querySelector('#lab-6-ex-1').addEventListener('click', ()=>renderEx1(content))
-
+    // xử lý sự kiện cho ex2
+    document.querySelector('#lab-6-ex-2').addEventListener('click', ()=>renderEx2(content))
 })
 const renderDeBai = (content) =>{
     content.innerHTML=`
@@ -24,7 +25,7 @@ const renderDeBai = (content) =>{
 }
 const renderEx1 = (content)=>{
     content.innerHTML = `
-    <h1 class="fst-italic text-decoration-underline mb-4 mt-3">Ex1</h1>
+    <h1 class="fst-italic text-decoration-underline mb-4 mt-3">Ex1 - chủ đề Anime</h1>
     <div class="row justify-content-evenly">
         <button class="col-3 btn btn-info">Design</button>
         <a href="./ex1.html" class="col-3 btn btn-success">Implementation</a>
@@ -33,16 +34,42 @@ const renderEx1 = (content)=>{
         <div class="col-6">
             <div class="d-flex mb-2 gap-2">
                 <h3>Trên Giấy</h3>
-                <a href="./images/page-design-lab-06.jpg" class="btn btn-success" download>tải về</a>
             </div>
             <img class="img-fluid" src="./images/page-design-lab-06.jpg" alt="paper">
+            <div class="text-center mt-2"> <a href="./images/page-design-lab-06.jpg" class="btn btn-success" download>tải về</a></div>
         </div>
         <div class="col-6">
             <div class="d-flex mb-2 gap-2">
                 <h3>Trên Figma</h3>
-                <a href="./images/figma-design-lab-06.png" class="btn btn-success" download>tải về</a>
             </div>
             <img class="img-fluid" src="./images/figma-design-lab-06.png" alt="figma">
+            <div class="text-center mt-2"> <a href="./images/figma-design-lab-06.png" class="btn btn-success" download>tải về</a></div>
+        </div>
+    </div>
+    `
+}
+
+const renderEx2 = (content)=>{
+    content.innerHTML = `
+    <h1 class="fst-italic text-decoration-underline mb-4 mt-3">Ex2 - chủ đề Calisthenics</h1>
+    <div class="row justify-content-evenly">
+        <button class="col-3 btn btn-info">Design</button>
+        <a href="./ex2.html" class="col-3 btn btn-success">Implementation</a>
+    </div>
+    <div class="row mt-3 ">
+        <div class="col-6">
+            <div class="d-flex mb-2 gap-2">
+                <h3>Trên Giấy</h3>
+            </div>
+            <img class="img-fluid" src="./images/page-design-lab-06-ex2.jpg" alt="paper">
+            <div class="text-center mt-2"> <a href="./images/page-design-lab-06-ex2.jpg" class="btn btn-success" download>tải về</a></div>
+        </div>
+        <div class="col-6">
+            <div class="d-flex mb-2 gap-2">
+                <h3>Trên Figma</h3>
+            </div>
+            <img class="img-fluid" src="./images/figma-design-lab-06-ex2.png" alt="figma">
+            <div class="text-center mt-2"> <a href="./images/figma-design-lab-06-ex2.png" class="btn btn-success" download>tải về</a></div>
         </div>
     </div>
     `
