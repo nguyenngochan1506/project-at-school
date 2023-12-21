@@ -41,6 +41,7 @@ const renderEx1 = (content)=>{
         <div class="col-6">
             <div class="d-flex mb-2 gap-2">
                 <h3>Trên Figma</h3>
+                <a class="btn btn-info" href="https://www.figma.com/community/file/1318617176984043618/lab-6-ex1" target="_blank">Link</a>
             </div>
             <img class="img-fluid" src="./images/figma-design-lab-06.png" alt="figma">
             <div class="text-center mt-2"> <a href="./images/figma-design-lab-06.png" class="btn btn-success" download>tải về</a></div>
@@ -67,6 +68,7 @@ const renderEx2 = (content)=>{
         <div class="col-6">
             <div class="d-flex mb-2 gap-2">
                 <h3>Trên Figma</h3>
+                <a class="btn btn-info" href="https://www.figma.com/community/file/1319656048065108062/lab-06-ex2" target="_blank">Link</a>
             </div>
             <img class="img-fluid" src="./images/figma-design-lab-06-ex2.png" alt="figma">
             <div class="text-center mt-2"> <a href="./images/figma-design-lab-06-ex2.png" class="btn btn-success" download>tải về</a></div>
