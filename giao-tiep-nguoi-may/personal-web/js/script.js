@@ -1,20 +1,23 @@
 window.addEventListener('load', () => {
     let url = window.location.pathname;
-    switch (url) {
-        case '/project-at-school/giao-tiep-nguoi-may/personal-web/index.html':
+    switch (true) {
+        case url.includes('/index.html'):
             document.querySelectorAll('[href="./index.html"]')[1].classList.add('active')
             break;
-        case '/project-at-school/giao-tiep-nguoi-may/personal-web/about.html':
+        case url.includes('/about.html') :
             document.querySelector('[href="./about.html"]').classList.add('active')
             break;
-        case '/project-at-school/giao-tiep-nguoi-may/personal-web/lab4.html':
+        case url.includes('/lab4.html'):
             document.querySelector('[href="./lab4.html"]').classList.add('active')
             break;
-        case '/project-at-school/giao-tiep-nguoi-may/personal-web/lab5.html':
+        case url.includes('/lab5.html'):
             document.querySelector('[href="./lab5.html"]').classList.add('active')
             break;
-        case '/project-at-school/giao-tiep-nguoi-may/personal-web/lab6.html':
+        case url.includes('/lab6.html'):
             document.querySelector('[href="./lab6.html"]').classList.add('active')
+            break;
+        case url.includes('/lab7.html'):
+            document.querySelector('[href="./lab7.html"]').classList.add('active')
             break;
 
     }
