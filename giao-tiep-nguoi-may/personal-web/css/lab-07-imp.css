@@ -1,0 +1,236 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.my-header {
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 6.3rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.my-content {
+    margin-top: 6.3rem;
+}
+
+.right-header-btn {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 3rem;
+}
+
+#btn-login {
+    border: 1px solid #000;
+    background: #FFF;
+
+}
+
+#btn-signup {
+    color: #FFF;
+    background: #FF8C38;
+}
+
+.my-breadcumbs {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.info-title {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    max-height: 3em;
+    overflow: hidden;
+}
+
+.list-info {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-height: 6em;
+    overflow: hidden;
+}
+
+.search-input {
+    width: 100%;
+    height: 6.4rem;
+    border-radius: 3rem;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding-left: 13%;
+}
+
+.search-icon {
+    left: 5%;
+    top: 20%;
+    font-size: 2.5rem;
+}
+
+.list-course-title {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.list-course-item {
+    height: 26rem;
+    width: 33.3rem;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.btn-load-more {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 500;
+    width: 18rem;
+    height: 5rem;
+    border-radius: 3rem;
+    background: #FF8C38;
+    border: none;
+}
+
+.my-footer {
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    height: 7.9rem;
+    margin-top: 5rem;
+}
+
+.footer-info {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* biểu mẫu */
+#bieu-mau {
+    position: fixed;
+    right: 0;
+    bottom: 7%;
+    z-index: 10;
+}
+
+.popup-bieu-mau {
+    position: fixed;
+    z-index: 20;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 500ms;
+}
+/* giấu popup */
+.close-popup{
+transform: scale(0.01);
+visibility: hidden;
+}
+
+.popup-bieu-mau-content {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 30vw;
+    height: 70vh;
+    border-radius: 2rem;
+}
+
+.popup-title {
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#fullname,
+#email {
+    padding-left: 0.5rem;
+    width: 80%;
+    height: 5.7rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    border: 1px solid #DEA6A6;
+}
+
+#noidung {
+    resize: none;
+    padding-left: 0.5rem;
+    width: 80%;
+    font-size: 2rem;
+    height: 19.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #DEA6A6;
+}
+
+.btn-popup {
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 20%;
+    height: 4rem;
+    background: #1D6FD9;
+    border: none;
+    border-radius: 0.5rem;
+}
+#icon-close{
+    position: absolute;
+    font-size: 3.5rem;
+    right: 1%;
+    top: 0;
+    cursor: pointer;
+}
+
+#btn-login,
+#btn-signup,
+#bieu-mau,
+.logo,
+.btn-load-more {
+    cursor: pointer;
+    transition: all 100ms;
+}
+.left-carousel{
+    cursor: pointer;
+}
+/* phần animation */
+#btn-login:hover,
+#btn-signup:hover {
+    transform: scale(1.2);
+}
+
+#btn-login:active,
+#btn-signup:active,
+#bieu-mau:active,
+.btn-popup:active,
+.btn-load-more:active {
+    transform: scale(0.9);
+}
+
+.list-course-item {
+    transition: all 200ms;
+}
+
+.list-course-item:hover {
+    transform: scale(1.1);
+}

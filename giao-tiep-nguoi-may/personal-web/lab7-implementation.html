@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-07 Implementation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/lab-07-imp.css">
+</head>
+
+<body>
+    <!-- biểu mẫu -->
+    <div id="bieu-mau">
+        <img src="./images/bieu-mau.png" alt="bieumau">
+    </div>
+    <!-- show popup bieu mau -->
+    <div class="popup-bieu-mau close-popup">
+        <form class="popup-bieu-mau-content d-flex flex-column align-items-center justify-content-around position-relative">
+            <i class="bi bi-x-circle" id="icon-close" ></i>
+            <div class="popup-title">Liên Hệ</div>
+            <input type="text" name="fullname" id="fullname" placeholder="Tên" autofocus required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <textarea name="noidung" id="noidung" placeholder="Nội Dung" required></textarea>
+            <button class="btn-popup d-flex justify-content-center align-items-center" >Gửi</button>
+        </form>
+    </div>
+    <!-- header -->
+    <div class="container-fluid row my-header">
+        <div class="col-4 logo">
+            <img src="./images/logo-lab-07.png" alt="logo">
+        </div>
+        <div class="col-8 d-flex gap-5 justify-content-end align-items-center">
+            <div id="btn-login" class="d-flex justify-content-center align-items-center right-header-btn">Đăng Nhập
+            </div>
+            <div id="btn-signup" class="d-flex justify-content-center align-items-center right-header-btn">Đăng Ký</div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="container-fluid ps-5 pe-5 my-content">
+        <!-- breadcumbs -->
+        <div class="my-breadcumbs mt-1 mb-2">Trang Chủ/...</div>
+        <!-- carousel and information -->
+        <div class="row">
+            <div class="col-8 left-carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/lab-07-carousel.png" class="d-block w-100" alt="carousel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/lab-07-carousel.png" class="d-block w-100" alt="carousel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/lab-07-carousel.png" class="d-block w-100" alt="carousel">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-4 right-information d-flex flex-column align-items-center p-5 justify-content-around">
+                <div class="info-title">Tìm Kiếm Khoá Học</div>
+                <div class="position-relative w-100">
+                    <i class="bi bi-search position-absolute search-icon"></i>
+                    <input class="search-input" type="text" placeholder="Tìm Kiếm Khoá Học...">
+                </div>
+                <ul class="list-info">
+                    <li>Full lộ trình trở thành lập
+                        trình viên Front-end</li>
+                    <li>Full lộ trình trở thành lập
+                        trình viên Back-end</li>
+                </ul>
+            </div>
+        </div>
+        <!-- list course -->
+        <div class="list-course">
+            <div class="list-course-title mt-4 mb-4">
+                Danh Mục Khoá Học
+            </div>
+            <div class="row justify-content-around">
+                <div class="list-course-item">
+                    <img class="mb-3" src="./images/lab-07-java-cousera.png" alt="java">
+                    <span>Java Core</span>
+                </div>
+                <div class="list-course-item">
+                    <img class="mb-3" src="./images/lab-07-python-cousera.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="list-course-item">
+                    <img class="mb-3" src="./images/lab-07-js-cousera.png" alt="js">
+                    <span>JavaScript</span>
+                </div>
+                <div class="list-course-item">
+                    <img class="mb-3" src="./images/lab-07-c-cousera.png" alt="c">
+                    <span>C/C++</span>
+                </div>
+                <div class="list-course-item">
+                    <img class="mb-3" src="./images/lab-07-html-cousera.png" alt="html/css">
+                    <span>HTML/CSS</span>
+                </div>
+                <div class="list-course-item">
+                    <img class="mb-3" src="./images/lab-07-reactjs-cousera.png" alt="reactjs">
+                    <span>React-JS</span>
+                </div>
+                <div class="list-course-item">
+                    <img class="mb-3" src="./images/lab-07-spring-cousera.png" alt="spring">
+                    <span>Spring-Boot Framework</span>
+                </div>
+                <div class="list-course-item">
+                    <img class="mb-3" src="./images/lab-07-sql-cousera.png" alt="sql">
+                    <span>SQL</span>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn-load-more">Xem Thêm</button>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- footer -->
+    <div class="my-footer pe-5 ps-5">
+            <div class="footer-info d-flex justify-content-between align-items-center h-100">
+                <span>Trang được tạo ra bởi <strong>Nguyễn Ngọc Hân</strong> với mục đích học tập!</span>
+                <span >Tốt hơn ngày hôm qua!</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/lab7-impl.js"></script>
+</body>
+
+</html>
