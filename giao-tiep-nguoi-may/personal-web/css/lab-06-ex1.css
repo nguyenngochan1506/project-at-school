@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .my-header{
     height: 60px ;
 }
@@ -56,4 +59,9 @@
 }
 .small-title{
     max-height: 6em;
+}
+.my-footer{
+    height: 60px ;
+    background: rgb(10, 10, 23);
+    border-top: 1px solid #fff;
 }
