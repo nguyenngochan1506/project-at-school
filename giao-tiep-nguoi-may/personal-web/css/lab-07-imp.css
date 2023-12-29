@@ -29,13 +29,13 @@ html {
     border-radius: 3rem;
 }
 
-#btn-login {
+.btn-login {
     border: 1px solid #000;
     background: #FFF;
 
 }
 
-#btn-signup {
+.btn-signup {
     color: #FFF;
     background: #FF8C38;
 }
@@ -202,8 +202,8 @@ visibility: hidden;
     cursor: pointer;
 }
 
-#btn-login,
-#btn-signup,
+.btn-login,
+.btn-signup,
 #bieu-mau,
 .logo,
 .btn-load-more {
@@ -214,13 +214,13 @@ visibility: hidden;
     cursor: pointer;
 }
 /* phần animation */
-#btn-login:hover,
-#btn-signup:hover {
+.btn-login:hover,
+.btn-signup:hover {
     transform: scale(1.2);
 }
 
-#btn-login:active,
-#btn-signup:active,
+.btn-login:active,
+.btn-signup:active,
 #bieu-mau:active,
 .btn-popup:active,
 .btn-load-more:active {
@@ -233,4 +233,36 @@ visibility: hidden;
 
 .list-course-item:hover {
     transform: scale(1.1);
+}
+.toggle-theme{
+    cursor: pointer;
+}
+.dark-header{
+    height: 6.2rem;
+    background-color: #000;
+    box-shadow: 0px 4px 4px 0px rgba(68, 169, 163, 0.25);
+}
+.dark-header-login{
+    background: #000;
+    color: #FFF;
+    border: 1px solid #fff;
+}
+.dark-header-sigup{
+    background: #000;
+    color: #FF8C38;
+    border: 1px solid #FF8C38;
+}
+.my-content-dark{
+    color: #fff;
+    background: #000;
+}
+.footer-dark-mode{
+    background: #000;
+box-shadow: 0px 4px 4px 0px rgba(126, 242, 235, 0.25) inset;
+    color:#fff;
+}
+.btn-load-more-dark-mode{
+    background: #000;
+    color: #FF8C38;
+    border: 1px solid #FF8C38;
 }
