@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-08 impl</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/lab-08-imp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- biểu mẫu -->
+    <div id="bieu-mau">
+        <img src="./images/bieu-mau.png" alt="bieumau">
+    </div>
+    <!-- show popup bieu mau -->
+    <div class="popup-bieu-mau close-popup">
+        <form class="popup-bieu-mau-content d-flex flex-column align-items-center justify-content-around position-relative">
+            <i class="bi bi-x-circle" id="icon-close" ></i>
+            <div class="popup-title">Liên Hệ</div>
+            <input type="text" name="fullname" id="fullname" placeholder="Tên" autofocus required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <textarea name="noidung" id="noidung" placeholder="Nội Dung" required></textarea>
+            <button class="btn-popup d-flex justify-content-center align-items-center" >Gửi</button>
+        </form>
+    </div>
+    <!-- header -->
+    <div class="header row">
+        <div class="col-6 left-header">
+            <img src="./images/logo-lab-08.png" alt="logo">
+        </div>
+        <div class="col-6 right-header row align-items-center">
+            <div class="group-link col-7 d-flex justify-content-evenly">
+                <div class="header-link">Địa Danh Việt Nam</div>
+                <div class="header-link">Đặt Lịch Trước</div>
+                <div class="header-link">Thông Tin Thêm</div>
+            </div>
+            <div class="group-btn col-5 d-flex gap-3">
+                <button id="btn-login">Đăng Nhập</button>
+                <button id="btn-signup">Đăng Ký</button>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- content -->
+    <div class="content container-fluid">
+        <div id="slide">
+            <div class="item" style="background-image: url(./images/1.png);">
+                <div class="slide-content">
+                    <div class="title">Vịnh Hạ Long</div>
+                    <div class="information">Biển kỳ diệu hòa quyện với hòn đảo đá vô song</div>
+                    <a href="#" class="more">Xem Thêm</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/2.png);">
+                <div class="slide-content">
+                    <div class="title">Phố Cổ Hội An</div>
+                    <div class="information">Hà Nội truyền thống, phố phường hấp dẫn</div>
+                    <a href="#" class="more">Xem Thêm</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/3.png);">
+                <div class="slide-content">
+                    <div class="title">Cố Đô Huế</div>
+                    <div class="information">Di tích lịch sử kỳ vĩ, đẹp mê hồn</div>
+                    <a href="#" class="more">Xem Thêm</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/4.png);">
+                <div class="slide-content">
+                    <div class="title">Đỉnh Fansipan</div>
+                    <div class="information">Đỉnh cao nhất Đông Nam Á, thiên đàng trecking</div>
+                    <a href="#" class="more">Xem Thêm</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/5.png);">
+                <div class="slide-content">
+                    <div class="title">Động Phong Nha</div>
+                    <div class="information">Kỳ quan động đá, hang Phong Nha và hang Sơn Đoòng nổi tiếng</div>
+                    <a href="#" class="more">Xem Thêm</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/6.png);">
+                <div class="slide-content">
+                    <div class="title">Cầu Bàn Tay Vàng</div>
+                    <div class="information">Kiệt tác kiến trúc nổi bật giữa lòng Đà Nẵng</div>
+                    <a href="#" class="more">Xem Thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="pre">
+                <i class="bi bi-arrow-left" style="font-size: 2rem;"></i>
+            </button>
+            <button class="next">
+                <i class="bi bi-arrow-right" style="font-size: 2rem;"></i>
+            </button>
+        </div>
+    </div>
+    <!-- end content -->
+   <!-- footer -->
+   <div class="my-footer pe-5 ps-5 ">
+    <div class="footer-info d-flex justify-content-between align-items-center h-100">
+        <span>Trang được tạo ra bởi <strong>Nguyễn Ngọc Hân</strong> với mục đích học tập!</span>
+        <span >Tốt hơn ngày hôm qua!</span>
+    </div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/lab8-impl.js"></script>
+</body>
+
+</html>

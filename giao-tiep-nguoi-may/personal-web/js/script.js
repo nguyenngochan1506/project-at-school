@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
         case url.includes('/index.html'):
             document.querySelectorAll('[href="./index.html"]')[1].classList.add('active')
             break;
-        case url.includes('/about.html') :
+        case url.includes('/about.html'):
             document.querySelector('[href="./about.html"]').classList.add('active')
             break;
         case url.includes('/lab4.html'):
@@ -18,6 +18,9 @@ window.addEventListener('load', () => {
             break;
         case url.includes('/lab7.html'):
             document.querySelector('[href="./lab7.html"]').classList.add('active')
+            break;
+        case url.includes('/lab8.html'):
+            document.querySelector('[href="./lab8.html"]').classList.add('active')
             break;
 
     }

@@ -1,0 +1,289 @@
+html {
+    font-size: 10px;
+}
+
+.header {
+    height: 6.5rem;
+    background: #EAF1F4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+.header-link {
+    color: #000;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+#btn-login,
+#btn-signup {
+    width: 10rem;
+    height: 3.3rem;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#btn-login {
+    border-radius: 1.5rem;
+    border: 1px solid #000;
+    background: #EAF1F4;
+}
+
+#btn-signup {
+    color: #fff;
+    border-radius: 1.5rem;
+    background: #0CF;
+    border: none;
+}
+
+.content {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+}
+
+#slide {
+    width: max-content;
+}
+
+.item {
+    height: 30rem;
+    width: 21rem;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 2.5rem;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.40);
+    display: inline-block;
+    transition: 500ms;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+
+}
+
+.item:nth-child(3) {
+    left: 50%;
+}
+
+.item:nth-child(4) {
+    left: calc(50% + 24rem);
+    filter: blur(2px);
+}
+
+.item:nth-child(5) {
+    left: calc(50% + 48rem);
+    filter: blur(2px);
+}
+
+.item:nth-child(n + 6) {
+    left: calc(50% + 72rem);
+    filter: blur(2px);
+    opacity: 0;
+}
+
+.item .slide-content {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    transform: translateY(-50%);
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.item .slide-content .title {
+    font-size: 4rem;
+    font-weight: 600;
+    animation: changeslide 1s ease-in-out 1 forwards;
+    opacity: 0;
+
+}
+
+.item .slide-content .information {
+    font-size: 2rem;
+    animation: changeslide 1s ease-in-out 0.3s 1 forwards;
+    opacity: 0;
+}
+
+.item .slide-content .more {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: #fff;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    padding: 0 1rem 0 1rem;
+    height: 2.5rem;
+    width: max-content;
+    color: #000;
+    text-decoration: none;
+    animation: changeslide 1s ease-in-out 0.6s 1 forwards;
+    opacity: 0;
+}
+
+.item:nth-child(1) .slide-content,
+.item:nth-child(2) .slide-content {
+    display: block;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons button {
+    border-radius: 50%;
+    border: none;
+    height: 5rem;
+    width: 5rem;
+}
+
+
+/* phần animation */
+@keyframes changeslide {
+    from {
+        opacity: 0;
+        transform: translate(0, 10rem);
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}
+
+.buttons .next:active,
+.buttons .pre:active,
+.more:active,
+#btn-login:active,
+#btn-signup:active {
+    transform: scale(0.9);
+}
+
+.buttons .next:hover,
+.buttons .pre:hover {
+    background-color: #ddc08d;
+    transition: background-color 200ms;
+}
+
+.my-footer {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 5rem;
+}
+
+/* biểu mẫu */
+#bieu-mau {
+    position: fixed;
+    right: 0;
+    bottom: 7%;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+#bieu-mau:active {
+    transform: scale(0.9);
+}
+
+/* giấu popup */
+.close-popup {
+    transform: scale(0.01);
+    visibility: hidden;
+}
+
+.popup-bieu-mau {
+    position: fixed;
+    z-index: 20;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 500ms;
+}
+
+.popup-bieu-mau-content {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 30vw;
+    height: 70vh;
+    border-radius: 2rem;
+}
+
+.popup-title {
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#icon-close{
+    position: absolute;
+    font-size: 3.5rem;
+    right: 1%;
+    top: 0;
+    cursor: pointer;
+}
+
+#fullname,
+#email {
+    padding-left: 0.5rem;
+    width: 80%;
+    height: 5.7rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    border: 1px solid #DEA6A6;
+}
+
+#noidung {
+    resize: none;
+    padding-left: 0.5rem;
+    width: 80%;
+    font-size: 2rem;
+    height: 19.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #DEA6A6;
+}
+.btn-popup {
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 20%;
+    height: 4rem;
+    background: #1D6FD9;
+    border: none;
+    border-radius: 0.5rem;
+}
